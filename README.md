@@ -1,5 +1,19 @@
 # 12FactorAppDemo
-Demo to showcase Codebase, Dependencies, Logs and Disposability
+Demo to showcase the Container portion of the 12 Factor App Methodology: Codebase, Dependencies, Logs and Disposability
+
+## Container Overview
+### Dependencies
+Our recommendations for working with dependencies are:
+*Always use a package manager to install dependent libraries
+*Declare package dependency information as part of the delivered software
+*Install all dependent libraries within the context of the application
+*Avoid global installation of dependent packages
+
+For the purposes of this demo we're using Node and it's package manager.
+### Codebase
+
+### Logs
+### Disposability
 
 ## Instructions 
 - Clone the repo
