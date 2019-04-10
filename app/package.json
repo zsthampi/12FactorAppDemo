@@ -18,6 +18,7 @@
   "homepage": "https://github.com/zsthampi/12FactorAppDemo#readme",
   "dependencies": {
     "express": "^4.16.4",
-    "forever": "^1.0.0"
+    "forever": "^1.0.0",
+    "winston": "^3.2.1"
   }
 }
