@@ -9,11 +9,27 @@ Our recommendations for working with dependencies are:
 - Install all dependent libraries within the context of the application
 - Avoid global installation of dependent packages
 
-For the purposes of this demo we're using Node and it's package manager.
+For the purposes of this demo we're using Node and its package manager.
 ### Codebase
+Recommendations and best practices:
+- TBD
+- TBD
+- TBD
+- TBD
 
 ### Logs
+Recommendations and best practices:
+- TBD
+- TBD
+- TBD
+- TBD
+
 ### Disposability
+Recommendations and best practices:
+- TBD
+- TBD
+- TBD
+- TBD
 
 ## Instructions 
 - Clone the repo

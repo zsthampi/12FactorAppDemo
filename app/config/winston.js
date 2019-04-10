@@ -5,6 +5,8 @@ const winston = require('winston');
 const logger = winston.createLogger({
     transports: [
         new winston.transports.Console()
+        // new transports.File({ filename: 'quick-start-error.log', level: 'error' }),
+        // new transports.File({ filename: 'quick-start-combined.log' })
     ]
 });
 
