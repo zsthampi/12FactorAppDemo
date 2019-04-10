@@ -3,6 +3,12 @@ const winston = require('winston');
 
 // Setting the transport method for our logger
 const logger = winston.createLogger({
+    format: winston.format.combine(
+        // Color coding logs by category
+        winston.format.colorize(),
+        // Simple output
+		winston.format.simple()
+	),
     transports: [
         new winston.transports.Console()
         // new transports.File({ filename: 'quick-start-error.log', level: 'error' }),
