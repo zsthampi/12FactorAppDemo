@@ -8,10 +8,11 @@ app.get('/', function (req, res) {
 });
 
 app.listen(3000, function () {
+  // Classic way of logging
   console.log('12FactorDemoApp listening on port 3000!');
 });
 
-logger.log('info', 'test message %s', 'my string');
+// Logging with Winston
 logger.info('Rosslyn best office');
 logger.warn('This demo is not going well');
 logger.info('It is a mild day');
