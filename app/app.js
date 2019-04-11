@@ -6,7 +6,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 app.get('/', function (req, res) {
-  res.send('Hello 12 Factor App Demo!');
+  res.send('Hello Insight Studio!');
 });
 
 const server = app.listen(3000, function () {
@@ -22,8 +22,8 @@ logger.error('Fake error message');
 
 process.on('SIGTERM', () => {
   logger.info('SIGTERM signal received.');
-  logger.log('Closing http server.');
+  // logger.log('Closing http server.');
   server.close(() => {
-    serverLogger.info('Http server closed.');
+    serverLogger.info('docker closed');
   });
 });

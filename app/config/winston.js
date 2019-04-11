@@ -22,11 +22,9 @@ logger.log('info', 'Pass a message and this works', {
 
 const serverLogger = winston.createLogger({
     format: winston.format.combine(
-        winston.format.colorize(),
 		winston.format.simple()
 	),
     transports: [
-        // new transports.File({ filename: 'quick-start-error.log', level: 'error' }),
         new winston.transports.File({ filename: 'server-closed.log', level: 'info' })
     ]
 });
