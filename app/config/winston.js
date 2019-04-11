@@ -11,8 +11,6 @@ const logger = winston.createLogger({
 	),
     transports: [
         new winston.transports.Console()
-        // new transports.File({ filename: 'quick-start-error.log', level: 'error' }),
-        // new transports.File({ filename: 'quick-start-combined.log' })
     ]
 });
 
@@ -22,4 +20,15 @@ logger.log('info', 'Pass a message and this works', {
     are: 'passed along'
   });
 
-module.exports = logger;
+const serverLogger = winston.createLogger({
+    format: winston.format.combine(
+        winston.format.colorize(),
+		winston.format.simple()
+	),
+    transports: [
+        // new transports.File({ filename: 'quick-start-error.log', level: 'error' }),
+        new winston.transports.File({ filename: 'server-closed.log', level: 'info' })
+    ]
+});
+
+module.exports = {logger, serverLogger};

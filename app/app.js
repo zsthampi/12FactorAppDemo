@@ -1,13 +1,15 @@
 const express = require('express');
 const app = express();
-const logger = require('./config/winston.js');
-// import logger from './config/winston.js';
+const {logger, serverLogger} = require('./config/winston.js');
+
+app.use(express.urlencoded({extended: true})); 
+app.use(express.json());
 
 app.get('/', function (req, res) {
   res.send('Hello 12 Factor App Demo!');
 });
 
-app.listen(3000, function () {
+const server = app.listen(3000, function () {
   // Classic way of logging
   console.log('12FactorDemoApp listening on port 3000!');
 });
@@ -17,3 +19,11 @@ logger.info('Rosslyn best office');
 logger.warn('This demo is not going well');
 logger.info('It is a mild day');
 logger.error('Fake error message');
+
+process.on('SIGTERM', () => {
+  logger.info('SIGTERM signal received.');
+  logger.log('Closing http server.');
+  server.close(() => {
+    serverLogger.info('Http server closed.');
+  });
+});
