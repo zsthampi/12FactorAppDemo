@@ -22,7 +22,6 @@ logger.error('Fake error message');
 
 process.on('SIGTERM', () => {
   logger.info('SIGTERM signal received.');
-  // logger.log('Closing http server.');
   server.close(() => {
     serverLogger.info('docker closed');
   });
