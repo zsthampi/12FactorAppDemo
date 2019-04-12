@@ -6,7 +6,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 app.get('/', function (req, res) {
-  res.send('Hello Insight Studio!');
+  res.send('Hello World!');
 });
 
 const server = app.listen(3000, function () {
@@ -23,6 +23,6 @@ logger.error('Fake error message');
 process.on('SIGTERM', () => {
   logger.info('SIGTERM signal received.');
   server.close(() => {
-    serverLogger.info('docker closed');
+    serverLogger.info('Signal received, server closed');
   });
 });
