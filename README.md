@@ -12,10 +12,9 @@ Our recommendations for working with dependencies are:
 For the purposes of this demo we're using Node and its package manager.
 ### Codebase
 Recommendations and best practices:
-- TBD
-- TBD
-- TBD
-- TBD
+- The choice of version control usually depends on factors like client preference, project size, extendibility etc. 
+- Use plugins with your favourite text editor, or use standalone tools, for Source Control management
+- Use graphical interfaces for Source Control actions like Commit, Merge, Diff View etc
 
 ### Logs
 Recommendations and best practices:
@@ -40,7 +39,6 @@ Recommendations and best practices:
 Now, updates on the source directory in the local machine will be mapped to the target directory in docker container.
 Verify it by ssh-ing to the Docker Container.
 
-<s>Restart the docker container to update the app.</s>
 Using <i>forever</i> node module, the app restarts itself automatically on updates. So restarting the docker container will be optional
 
 ### Build Docker Image
