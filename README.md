@@ -30,7 +30,7 @@ Recommendations and best practices:
 - If you need a third-party tool, do extensive research before implementing
 
 
-## Instructions 
+## Docker Instructions 
 - Clone the repo
 - run npm install
 - build and run the Docker image based on commands below. 
