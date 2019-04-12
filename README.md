@@ -18,17 +18,17 @@ Recommendations and best practices:
 
 ### Logs
 Recommendations and best practices:
-- TBD
-- TBD
-- TBD
-- TBD
+- Categorize your logs to make it easier to discern between what's important and not
+- Consider creating a style/format guide for logs
+- Don't forget about error handling
+- Remember that logs aren't just for you, they're for anyone that can potentially work on the codebase
 
 ### Disposability
 Recommendations and best practices:
-- TBD
-- TBD
-- TBD
-- TBD
+- Keep it simple
+- Take into consideration all of the processes you may have running on your app
+- If you need a third-party tool, do extensive research before implementing
+
 
 ## Instructions 
 - Clone the repo
@@ -39,6 +39,7 @@ Recommendations and best practices:
 Now, updates on the source directory in the local machine will be mapped to the target directory in docker container.
 Verify it by ssh-ing to the Docker Container.
 
+<s>Restart the docker container to update the app.</s>
 Using <i>forever</i> node module, the app restarts itself automatically on updates. So restarting the docker container will be optional
 
 ### Build Docker Image
