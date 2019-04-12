@@ -39,7 +39,6 @@ Recommendations and best practices:
 Now, updates on the source directory in the local machine will be mapped to the target directory in docker container.
 Verify it by ssh-ing to the Docker Container.
 
-<s>Restart the docker container to update the app.</s>
 Using <i>forever</i> node module, the app restarts itself automatically on updates. So restarting the docker container will be optional
 
 ### Build Docker Image
