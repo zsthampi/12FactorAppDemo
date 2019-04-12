@@ -9,11 +9,26 @@ Our recommendations for working with dependencies are:
 *Install all dependent libraries within the context of the application
 *Avoid global installation of dependent packages
 
-For the purposes of this demo we're using Node and it's package manager.
+For the purposes of this demo we're using Node and its package manager.
 ### Codebase
+Recommendations for choosing tools and best practices:
+- Use an IDE or a separate program that sees Treeview Visualizations for branches and commits
+- Compare files between branches and commits using Diff View
+- Choose a tool that helps you easily resolve merge conflicts
 
 ### Logs
+Recommendations and best practices:
+- Categorize your logs to make it easier to discern between what's important and not
+- Consider creating a style/format guide for logs
+- Don't forget about error handling
+- Remember that logs aren't just for you, they're for anyone that can potentially work on the codebase
+
 ### Disposability
+Recommendations and best practices:
+- Keep it simple
+- Take into consideration all of the processes you may have running on your app
+- If you need a third-party tool, do extensive research before implementing
+
 
 ## Instructions 
 - Clone the repo
