@@ -6,7 +6,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 app.get('/', function (req, res) {
-  res.send('Hello World!');
+  res.send('Hello Insight Studio!');
 });
 
 const server = app.listen(3000, function () {
